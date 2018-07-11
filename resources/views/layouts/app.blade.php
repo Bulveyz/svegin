@@ -26,7 +26,15 @@
     @include('layouts.header');
 
     <div id="app">
-        @yield('content')
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 blue">
+                        @yield('content')
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     @yield('js')

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Channel;
 use App\Thread;
 use Illuminate\Http\Request;
 
@@ -24,7 +25,8 @@ class ThreadController extends Controller
    */
   public function create()
   {
-    //
+    $channels = Channel::latest()->get();
+    return view('threads.create', compact('channels'));
   }
 
   /**
@@ -37,10 +39,11 @@ class ThreadController extends Controller
   {
     $this->validate($request, [
         'title' => 'required',
-        'body' => 'required'
+        'body' => 'required',
+        'channel_id' => 'required|exists:channels,id'
     ]);
 
-    $thread = Thread::create($request->all() + ['user_id' => auth()->id()]);
+    $thread = Thread::create($request->all() + ['user_id' => 1]);
 
     return redirect('/threads/' . $thread->id);
   }
@@ -51,9 +54,11 @@ class ThreadController extends Controller
    * @param  \App\Thread $thread
    * @return \Illuminate\Http\Response
    */
-  public function show(Thread $thread)
+  public function show(Channel $channel, Thread $thread)
   {
-    //
+    return $thread->replies()->get();
+    $replies = $thread->replies()->get();
+    return view('threads.show', compact(['thread', 'replies']));
   }
 
   /**
@@ -64,7 +69,8 @@ class ThreadController extends Controller
    */
   public function edit(Thread $thread)
   {
-    //
+    $channels = Channel::latest()->get();
+    return view('threads.edit', compact(['thread', 'channels']));
   }
 
   /**
@@ -76,7 +82,15 @@ class ThreadController extends Controller
    */
   public function update(Request $request, Thread $thread)
   {
-    //
+    $this->validate($request, [
+        'title' => 'required',
+        'body' => 'required',
+        'channel_id' => 'required|exists:channels,id'
+    ]);
+
+    $thread->update($request->all() + ['user_id' => 1]);
+
+    return redirect('/threads/' . $thread->id);
   }
 
   /**
@@ -88,5 +102,14 @@ class ThreadController extends Controller
   public function destroy(Thread $thread)
   {
     //
+  }
+
+  public function reply(Thread $thread, Request $request)
+  {
+    $this->validate($request, [
+       'body' => 'required'
+    ]);
+
+    $thread->reply($request->body);
   }
 }

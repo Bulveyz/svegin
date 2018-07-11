@@ -9,7 +9,7 @@
 namespace App;
 
 
-class Replyer
+trait Replyer
 {
   public function replies() {
       return $this->morphMany(Reply::class, 'subject');
@@ -17,7 +17,7 @@ class Replyer
 
   public function reply($body)
   {
-    $attributes = ['user_id' => auth()->id(), 'body' => $body];
+    $attributes = ['user_id' => 1, 'body' => $body];
     $this->replies()->create($attributes);
   }
 }

@@ -4,12 +4,12 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Reply extends Model
+class Channel extends Model
 {
   protected $guarded = [];
 
-  public function replyed()
+  public function getRouteKeyName()
   {
-    return $this->morphTo();
+    return 'name';
   }
 }
