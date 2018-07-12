@@ -7,79 +7,88 @@ use Illuminate\Http\Request;
 
 class NewsController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        //
-    }
+  /**
+   * Display a listing of the resource.
+   *
+   * @return \Illuminate\Http\Response
+   */
+  public function index()
+  {
+    return view('news.index');
+  }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
+  /**
+   * Show the form for creating a new resource.
+   *
+   * @return \Illuminate\Http\Response
+   */
+  public function create()
+  {
+    return view('news.create');
+  }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
+  /**
+   * Store a newly created resource in storage.
+   *
+   * @param  \Illuminate\Http\Request $request
+   * @return \Illuminate\Http\Response
+   */
+  public function store(Request $request)
+  {
+    $this->validate($request, [
+        'title' => 'required',
+        'body' => 'required'
+    ]);
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\News  $news
-     * @return \Illuminate\Http\Response
-     */
-    public function show(News $news)
-    {
-        //
-    }
+    $news = News::create($request->all() + ['user_id' => auth()->id()]);
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\News  $news
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(News $news)
-    {
-        //
-    }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\News  $news
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, News $news)
-    {
-        //
-    }
+    return redirect('news/' . $news->id);
+  }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\News  $news
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(News $news)
-    {
-        //
-    }
+  /**
+   * Display the specified resource.
+   *
+   * @param  \App\News $news
+   * @return \Illuminate\Http\Response
+   */
+  public function show(News $news)
+  {
+    $replies = $news->replies()->get();
+    return view('news.show', compact(['news', 'replies']));
+  }
+
+  /**
+   * Show the form for editing the specified resource.
+   *
+   * @param  \App\News $news
+   * @return \Illuminate\Http\Response
+   */
+  public function edit(News $news)
+  {
+    return view('news.edit', compact('news'));
+  }
+
+  /**
+   * Update the specified resource in storage.
+   *
+   * @param  \Illuminate\Http\Request $request
+   * @param  \App\News $news
+   * @return \Illuminate\Http\Response
+   */
+  public function update(Request $request, News $news)
+  {
+    $news->update($request->all());
+  }
+
+  /**
+   * Remove the specified resource from storage.
+   *
+   * @param  \App\News $news
+   * @return \Illuminate\Http\Response
+   */
+  public function destroy(News $news)
+  {
+    //
+  }
 }

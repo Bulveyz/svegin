@@ -56,9 +56,9 @@ class ThreadController extends Controller
    */
   public function show(Channel $channel, Thread $thread)
   {
-    return $thread->replies()->get();
-    $replies = $thread->replies()->get();
+    $replies = $thread->replies()->latest()->get();
     return view('threads.show', compact(['thread', 'replies']));
+
   }
 
   /**
