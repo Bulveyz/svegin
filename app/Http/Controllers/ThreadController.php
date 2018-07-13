@@ -15,7 +15,8 @@ class ThreadController extends Controller
    */
   public function index()
   {
-    //
+    $threads = Thread::latest()->get();
+    return view('threads.index', compact('threads'));
   }
 
   /**
@@ -107,7 +108,7 @@ class ThreadController extends Controller
   public function reply(Thread $thread, Request $request)
   {
     $this->validate($request, [
-       'body' => 'required'
+        'body' => 'required'
     ]);
 
     $thread->reply($request->body);

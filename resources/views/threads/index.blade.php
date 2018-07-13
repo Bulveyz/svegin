@@ -2,7 +2,7 @@
 
 @section('content')
     @foreach($threads as $thread)
-        <a href="{{$thread->path()}}">{{$thread->title}}</a>
+        <a href="/threads/{{$thread->channel->name}}/{{$thread->id}}">{{$thread->title}}</a>
         <hr>
     @endforeach
 @endsection
