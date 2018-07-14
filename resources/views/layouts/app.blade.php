@@ -12,10 +12,11 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-
+    <script src="{{ asset('js/main.js') }}" defer></script>
     <!-- Fonts -->
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
@@ -29,7 +30,7 @@
         <div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 blue">
+                    <div class="col-md-12">
                         @yield('content')
                     </div>
                 </div>
@@ -37,6 +38,11 @@
         </div>
     </div>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     @yield('js')
+
 </body>
 </html>

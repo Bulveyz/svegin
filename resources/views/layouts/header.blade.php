@@ -30,7 +30,7 @@
                 <a class="" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <img src="{{asset('img/1px.png')}}" class="user-icon">
                 </a>
-                <div class="dropdown-menu login-dark" aria-labelledby="dropdownMenuLink">
+                <div class="dropdown-menu login-dark neon purp" aria-labelledby="dropdownMenuLink">
                     <form method="post">
                         <div class="illustration"><i class="icon ion-ios-locked-outline"></i></div>
                         <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email" /></div>
