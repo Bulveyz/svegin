@@ -595,7 +595,105 @@ shadow
   }
 }
 
+.neon.purp {
+  color: #ebffff;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5), 0 0 20px #fff, 0 0 10px #2a0572, 0 0 50px #2a0572;
+  -webkit-animation: 1.5s ease-in-out infinite alternate;
+          animation: 1.5s ease-in-out infinite alternate;
+  -webkit-animation-name: uaesqiu3z;
+          animation-name: uaesqiu3z;
+}
+@-webkit-keyframes uaesqiu3z {
+  from {
+    box-shadow: 2px 2px 1px rgba(212, 210, 210, 0.5), 0 0 20px #fff, 0 0 10px #2a0572, 0 0 50px #2a0572;
+  }
+  to {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #2a0572, 0 0 35px #2a0572, 0 0 40px #2a0572, 0 0 50px #2a0572, 0 0 75px #2a0572;
+  }
+}
+@keyframes uaesqiu3z {
+  from {
+    box-shadow: 2px 2px 1px rgba(212, 210, 210, 0.5), 0 0 20px #fff, 0 0 10px #2a0572, 0 0 50px #2a0572;
+  }
+  to {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #2a0572, 0 0 35px #2a0572, 0 0 40px #2a0572, 0 0 50px #2a0572, 0 0 75px #2a0572;
+  }
+}
 
+.neon.red {
+  color: #ebffff;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5), 0 0 20px #fff, 0 0 10px #db3939, 0 0 50px #db3939;
+  -webkit-animation: 1.5s ease-in-out infinite alternate;
+          animation: 1.5s ease-in-out infinite alternate;
+  -webkit-animation-name: uaesqiu2z;
+          animation-name: uaesqiu2z;
+}
+@-webkit-keyframes uaesqiu2z {
+  from {
+    box-shadow: 2px 2px 1px rgba(212, 210, 210, 0.5), 0 0 20px #fff, 0 0 10px #db3939, 0 0 50px #db3939;
+  }
+  to {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #db3939, 0 0 35px #db3939, 0 0 40px #db3939, 0 0 50px #db3939, 0 0 75px #db3939;
+  }
+}
+@keyframes uaesqiu2z {
+  from {
+    box-shadow: 2px 2px 1px rgba(212, 210, 210, 0.5), 0 0 20px #fff, 0 0 10px #db3939, 0 0 50px #db3939;
+  }
+  to {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #db3939, 0 0 35px #db3939, 0 0 40px #db3939, 0 0 50px #db3939, 0 0 75px #db3939;
+  }
+}
+
+.neon.yel {
+  color: #ebffff;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5), 0 0 20px #fff, 0 0 10px #ffe73e, 0 0 50px #ffe73e;
+  -webkit-animation: 1.5s ease-in-out infinite alternate;
+          animation: 1.5s ease-in-out infinite alternate;
+  -webkit-animation-name: uaesqiu1z;
+          animation-name: uaesqiu1z;
+}
+@-webkit-keyframes uaesqiu1z {
+  from {
+    box-shadow: 2px 2px 1px rgba(212, 210, 210, 0.5), 0 0 20px #fff, 0 0 10px #ffe73e, 0 0 50px #ffe73e;
+  }
+  to {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffe73e, 0 0 35px #ffe73e, 0 0 40px #ffe73e, 0 0 50px #ffe73e, 0 0 75px #ffe73e;
+  }
+}
+@keyframes uaesqiu1z {
+  from {
+    box-shadow: 2px 2px 1px rgba(212, 210, 210, 0.5), 0 0 20px #fff, 0 0 10px #ffe73e, 0 0 50px #ffe73e;
+  }
+  to {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffe73e, 0 0 35px #ffe73e, 0 0 40px #ffe73e, 0 0 50px #ffe73e, 0 0 75px #ffe73e;
+  }
+}
+
+.neon.gren {
+  color: #ebffff;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5), 0 0 20px #fff, 0 0 10px #39f79f, 0 0 50px #39f79f;
+  -webkit-animation: 1.5s ease-in-out infinite alternate;
+          animation: 1.5s ease-in-out infinite alternate;
+  -webkit-animation-name: uaesqiu0z;
+          animation-name: uaesqiu0z;
+}
+@-webkit-keyframes uaesqiu0z {
+  from {
+    box-shadow: 2px 2px 1px rgba(212, 210, 210, 0.5), 0 0 20px #fff, 0 0 10px #39f79f, 0 0 50px #39f79f;
+  }
+  to {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #39f79f, 0 0 35px #39f79f, 0 0 40px #39f79f, 0 0 50px #39f79f, 0 0 75px #39f79f;
+  }
+}
+@keyframes uaesqiu0z {
+  from {
+    box-shadow: 2px 2px 1px rgba(212, 210, 210, 0.5), 0 0 20px #fff, 0 0 10px #39f79f, 0 0 50px #39f79f;
+  }
+  to {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #39f79f, 0 0 35px #39f79f, 0 0 40px #39f79f, 0 0 50px #39f79f, 0 0 75px #39f79f;
+  }
+}
 
 .blue-b {
   color: #ebffff;
@@ -722,4 +820,26 @@ shadow
   to {
     box-shadow: inset 0 0 5px #614296, inset 0 0 10px #614296, inset 0 0 15px #614296, inset 0 0 20px #614296, inset 0 0 35px #614296, inset 0 0 40px #614296, inset 0 0 50px #614296, inset 0 0 75px #614296;
   }
+}
+
+
+textarea:focus {
+  background-color: #4450e04 !important;
+}
+
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+ 
+::-webkit-scrollbar-track {
+    background-color: #ebebeb;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background: #6d6d6d; 
 }

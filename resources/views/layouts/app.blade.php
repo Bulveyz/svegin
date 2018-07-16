@@ -16,7 +16,7 @@
     <!-- Fonts -->
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
@@ -38,7 +38,10 @@
         </div>
     </div>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <div id="stars3"></div>
+    <div id="stars4"></div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>

@@ -1,12 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-
-
 	        <div class="row donat">
-				    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3   list vip">
-					        <dt class="userd">B1 - Игрок</dt> &nbsp; &nbsp; &nbsp; &nbsp;
+				    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 neon purp list vip" style="    padding-left: 0px; padding-bottom: 0px; padding-right: 0px; height: 405px;">
+					        <dt class="userd">B1 - Игрок</dt>
 							<dd><a href="#" class="b1-n"><b>Приваты и точки /home</b></a></dd>
 					        <dd><a href="#">Размер привата : 600к</a></dd>
 					        <dd><a href="#">Количество приватов : 1</a></dd>
@@ -18,8 +15,8 @@
 					        <dd><a href="#">Простой скин</a></dd>
 					        <dd><a href="#">Простой плащ</a></dd>
 				    </div>
-				    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3  list nigiri">
-					        <dt class="bb8">BB-8 - VIP</dt> &nbsp; &nbsp; &nbsp; &nbsp;
+				    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 neon red list nigiri" style="    padding-left: 0px; padding-right: 0px; padding-bottom: 0px; height: 615px;">
+					        <dt class="bb8">BB-8 - VIP</dt>
 					        <dd><a href="#" class="bb8-n"><b>Приваты и точки /home</b></a></dd>
 					        <dd><a href="#">Размер привата : 600к</a></dd>
 					        <dd><a href="#">Количество приватов : 5</a></dd>
@@ -37,8 +34,8 @@
 							<dd><a href="#">Простой скин</a></dd>
 							<dd><a href="#">Простой плащ</a></dd>
 				    </div>
-				    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3  list maki">
-				        <dt class="c3po">C-3PO - Premium</dt> &nbsp; &nbsp; &nbsp; &nbsp;
+				    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 neon yel  list maki" style="    padding-left: 0px; padding-bottom: 0px; padding-right: 0px; height: 860px;">
+				        <dt class="c3po">C-3PO - Premium</dt>
 				        <dd><a href="#" class="c3po-n"><b>Приваты и точки /home</b></a></dd>
 				        <dd><a href="#">Размер привата : 600к</a></dd>
 				        <dd><a href="#">Количество приватов : 7</a></dd>
@@ -63,8 +60,8 @@
 						<dd><a href="#">HD скин</a></dd>
 						<dd><a href="#">HD плащ</a></dd>
 				    </div>
-				    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 list sashimi">
-					        <dt class="r2d2" style="text-indent: 66px;">R2-D2 - Deluxe</dt> &nbsp; &nbsp; &nbsp; &nbsp;
+				    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 neon gren list sashimi" style="padding-left: 0px; padding-right: 0px; padding-bottom: 0px; margin-bottom: 50px;">
+					        <dt class="r2d2" style="text-indent: 66px;">R2-D2 - Deluxe</dt>
 					        <dd><a href="#" class="r2d2-n"><b>Приваты и точки /home</b></a></dd>
 					        <dd><a href="#">Размер привата : 600к</a></dd>
 					        <dd><a href="#">Количество приватов : 10</a></dd>
@@ -103,5 +100,4 @@
 				    
 				</div>
 	        </div>
-	</div>
 @endsection
