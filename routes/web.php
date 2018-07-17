@@ -17,4 +17,5 @@ Route::get('donat', 'DonatController@index');
 Route::get('faq', 'FaqController@index');
 
 Route::resource('feed', 'FeedController');
+Route::get('/', 'FeedController@index');
 

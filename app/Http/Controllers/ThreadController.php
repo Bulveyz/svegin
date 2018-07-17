@@ -112,5 +112,7 @@ class ThreadController extends Controller
     ]);
 
     $thread->reply($request->body);
+
+    return back();
   }
 }
