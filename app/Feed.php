@@ -6,5 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Feed extends Model
 {
-    //
+  use Replyer;
+  protected $guarded = [];
 }

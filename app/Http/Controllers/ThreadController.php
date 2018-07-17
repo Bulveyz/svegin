@@ -44,7 +44,7 @@ class ThreadController extends Controller
         'channel_id' => 'required|exists:channels,id'
     ]);
 
-    $thread = Thread::create($request->all() + ['user_id' => 1]);
+    $thread = Thread::create($request->all() + ['user_id' => auth()->id()]);
 
     return redirect('/threads/' . $thread->id);
   }
@@ -89,7 +89,7 @@ class ThreadController extends Controller
         'channel_id' => 'required|exists:channels,id'
     ]);
 
-    $thread->update($request->all() + ['user_id' => 1]);
+    $thread->update($request->all() + ['user_id' => auth()->id()]);
 
     return redirect('/threads/' . $thread->id);
   }
