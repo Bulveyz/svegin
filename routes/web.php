@@ -18,4 +18,6 @@ Route::get('faq', 'FaqController@index');
 
 Route::resource('feed', 'FeedController');
 Route::get('/', 'FeedController@index');
+Route::post('feed/reply/{feed}', 'FeedController@reply');
+
 

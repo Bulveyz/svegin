@@ -136,5 +136,7 @@ class FeedController extends Controller
     ]);
 
     $feed->reply($request->body);
+
+    return back();
   }
 }
