@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Feed;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class FeedController extends Controller
 {
@@ -97,11 +98,22 @@ class FeedController extends Controller
         'body' => 'required',
     ]);
 
+    $path = null;
+
     if ($request->has('preview')) {
+      Storage::delete($request->preview);
       $path = request()->file('preview')->store('public/');
+    } else {
+      $path = $feed->preview;
     }
 
-    $feed->update($request->all() + ['user_id' => auth()->id(), 'preview' => $path]);
+    $feed->update([
+        'user_id' => auth()->id(),
+        'preview' => $path,
+        'title' => $request->title,
+        'body' => $request->body
+    ]);
+    return redirect('/feed/' . $feed->id);
   }
 
   /**
@@ -114,7 +126,7 @@ class FeedController extends Controller
   {
     $feed->delete();
 
-    return redirect('feed');
+    return redirect('/');
   }
 
   public function reply(Feed $feed, Request $request)
