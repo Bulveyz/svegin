@@ -2224,7 +2224,7 @@ pre code {
   font-size: 0.9rem;
   line-height: 1.6;
   color: #495057;
-  background-color: #fff;
+  background-color: #4450e040;
   background-clip: padding-box;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
@@ -2248,7 +2248,7 @@ pre code {
 
 .form-control:focus {
   color: #495057;
-  background-color: #fff;
+  background-color: #4450e040;
   border-color: #80bdff;
   outline: 0;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
@@ -2287,7 +2287,7 @@ select.form-control:not([size]):not([multiple]) {
 
 select.form-control:focus::-ms-value {
   color: #495057;
-  background-color: #fff;
+  background-color: #4450e040;
 }
 
 .form-control-file,

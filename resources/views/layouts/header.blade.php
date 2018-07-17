@@ -15,16 +15,16 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                <a href="#"><img src="{{asset('img/1px.png')}}" class="home-icon" title="главная"></a>
+                <a href="/"><img src="{{asset('img/1px.png')}}" class="home-icon" title="главная"></a>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                <a href="#"><img src="{{asset('img/1px.png')}}" class="forum-icon"></a>
+                <a href="threads"><img src="{{asset('img/1px.png')}}" class="forum-icon"></a>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                <a href="#"><img src="{{asset('img/1px.png')}}" class="donat-icon"></a>
+                <a href="donat"><img src="{{asset('img/1px.png')}}" class="donat-icon"></a>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                <a href="#"><img src="{{asset('img/1px.png')}}" class="info-icon"></a>
+                <a href="faq"><img src="{{asset('img/1px.png')}}" class="info-icon"></a>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-6 col-xl-2 dropdown">
                 <a class="" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

@@ -2,7 +2,7 @@
 
 @section('content')
     @foreach($threads as $thread)
-        <div class="thread bg-white rounded p-3 text-left">
+        <div class="thread rounded p-3 text-left intro neon blue" style="margin-bottom: 50px">
             <div class="thread__header mb-5">
                 <h3>{{$thread->title}}</h3>
             </div>
@@ -14,7 +14,7 @@
             <div class="thread__footer d-flex justify-content-between">
                 <p>{{$thread->created_at->diffForHumans()}}</p>
                 <a href="/threads/{{$thread->channel->name}}/{{$thread->id}}"
-                   class="btn btn-outline-success">Читать далее</a>
+                   class="btn neon gren btn-outline-success" style="    background-color: #02fd1e80;">Читать далее</a>
             </div>
         </div>
     @endforeach

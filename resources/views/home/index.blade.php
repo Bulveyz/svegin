@@ -5,7 +5,7 @@
     <div>
         <div class="container">
             <div class="row">
-                <div class="col-md-12 news neon blue"></div>
+                <div class="col-md-12 intro neon blue"></div>
             </div>
         </div>
     </div>
