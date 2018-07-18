@@ -20,4 +20,7 @@ Route::resource('feed', 'FeedController');
 Route::get('/', 'FeedController@index');
 Route::post('feed/reply/{feed}', 'FeedController@reply');
 
+Route::get('profile/{user}', 'ProfileController@show');
+Route::post('profile/avatar/{user}', 'ProfileController@avatar');
+
 
