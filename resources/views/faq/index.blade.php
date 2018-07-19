@@ -12,6 +12,8 @@
     1.Ознакомьтесь с правилами сервера.<br><br>
     2.Пройдите регистрацию.<br><br>
     3.При желании Вы можете установить скин. Для этого авторизуйтесь на сайте, затем перейдите в личный кабинет.
+        <br><br>
+        <a class="btn btn-block neon blue" href="/register">Регистрация</a>
     </div>
     <div style="float: right; text-align: left; color: white; width: 500px; padding-top: 15px; padding-left: 15px; padding-right: 15px; padding-bottom: 15px; margin-top: 550px;" class="intro neon blue"  data-aos="fade-up-left">
     <h3>2. Загрузка лаунчера</h3> Для игры на наших серверах потребуется специальный клиент, настроенный под наши сервера. Лаунчер поможет вам его загрузить и запустить. Никаких модификаций на клиент устанавливать самостоятельно не нужно.<br><br>
