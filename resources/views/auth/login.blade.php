@@ -17,9 +17,9 @@
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }} neon blue" name="email" value="{{ old('email') }}" required autofocus style="background-color: #0d0121; color: white;">
 
-                                @if ($errors->has('email'))
+                                @if ($errors->any())
                                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('email') }}</strong>
+                                        <strong>{{ dd($errors->all()) }}</strong>
                                     </span>
                                 @endif
                             </div>

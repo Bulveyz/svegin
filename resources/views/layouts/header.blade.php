@@ -52,6 +52,9 @@
                             <div class="form-group">
                                 <input class="form-control neon blue" type="password" name="password" placeholder="Пароль" style="background-color: #0d0121; color: white; border-radius: 10px;">
                             </div>
+                            @if($errors->any())
+                                <p class="text-danger">{{$errors->first()}}</p>
+                            @endif
                             <div class="form-group">
                                 <button class="btn btn-primary btn-block neon gren" type="submit" style="background-color: #02fd1e80; border: none; border-radius: 10px;">Войти</button>
                                 <div class="text-center pt-3">
