@@ -54,6 +54,9 @@
                             </div>
                             <div class="form-group">
                                 <button class="btn btn-primary btn-block" type="submit">Войти</button>
+                                <div class="text-center pt-3">
+                                    <a class="text-dark" href="/register">Регистрация</a>
+                                </div>
                             </div>
                         </form>
                     </div>
