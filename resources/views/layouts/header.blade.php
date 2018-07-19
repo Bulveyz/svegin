@@ -34,9 +34,9 @@
                              src="{{\Illuminate\Support\Facades\Storage::url(auth()->user()->avatar)}}" width="150px"
                              height="100px">
                     </a>
-                    <div class="dropdown-menu login-dark intro neon blue text-center" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="/profile/{{auth()->id()}}">Профиль</a>
-                        <a class="dropdown-item" href="/logout">Выйти</a>
+                    <div class="dropdown-menu login-dark intro neon blue text-center" aria-labelledby="dropdownMenuLink" style="padding-bottom: 10px; padding-top: 10px;">
+                        <a class="dropdown-item" href="/profile/{{auth()->id()}}" style="color: white; background-color: #0c021d5e; margin-bottom: 10px;">Профиль</a>
+                        <a class="dropdown-item" href="/logout" style="color: white; background-color: #0c021d5e;">Выйти</a>
                     </div>
                 @else
                     <a class="" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
