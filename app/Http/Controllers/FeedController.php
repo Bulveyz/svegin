@@ -8,6 +8,12 @@ use Illuminate\Support\Facades\Storage;
 
 class FeedController extends Controller
 {
+
+  public function __construct()
+  {
+    $this->middleware('auth')->except('index', 'show');
+  }
+
   /**
    * Display a listing of the resource.
    *
@@ -93,6 +99,8 @@ class FeedController extends Controller
    */
   public function update(Request $request, Feed $feed)
   {
+    $this->authorize('update', $feed);
+
     $this->validate($request, [
         'title' => 'required',
         'body' => 'required',
@@ -124,6 +132,8 @@ class FeedController extends Controller
    */
   public function destroy(Feed $feed)
   {
+    $this->authorize('delete', $feed);
+
     $feed->delete();
 
     return redirect('/');

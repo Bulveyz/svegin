@@ -8,6 +8,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::get('logout', 'Auth\LoginController@logout');
+
 Route::resource('threads', 'ThreadController');
 Route::get('threads/{channel}/{thread}', 'ThreadController@show');
 Route::post('threads/reply/{thread}', 'ThreadController@reply');
@@ -22,5 +24,6 @@ Route::post('feed/reply/{feed}', 'FeedController@reply');
 
 Route::get('profile/{user}', 'ProfileController@show');
 Route::post('profile/avatar/{user}', 'ProfileController@avatar');
+
 
 
