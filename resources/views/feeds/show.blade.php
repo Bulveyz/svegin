@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="thread text-left bg-white rounded p-3 text-left">
-        <div class="thread__header mb-5">
+    <div class="thread text-left rounded p-3 text-left intro neon blue" style="background-color: #4450e040; padding-top: 5px; padding-bottom: 5px; padding-left: 5px; padding-right: 5px;">
+        <div class="thread__header mb-5" >
             <h3>{{$feed->title}}</h3>
         </div>
         <div class="thread__body mb-5 text-truncate" style="max-width: 100%;">
