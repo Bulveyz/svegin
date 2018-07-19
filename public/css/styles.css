@@ -359,7 +359,7 @@ a {
 }
 
 .login-dark {
-
+  top: 82px !important;
   background-size:cover;
   position:relative;
   
@@ -391,7 +391,7 @@ a {
   border-radius:0;
   box-shadow:none;
   outline:none;
-  color:inherit;
+
 }
 
 .login-dark form .btn-primary {
