@@ -34,7 +34,7 @@
                              src="{{\Illuminate\Support\Facades\Storage::url(auth()->user()->avatar)}}" width="150px"
                              height="100px">
                     </a>
-                    <div class="dropdown-menu login-dark neon purp text-center" aria-labelledby="dropdownMenuLink">
+                    <div class="dropdown-menu login-dark intro neon blue text-center" aria-labelledby="dropdownMenuLink">
                         <a class="dropdown-item" href="/profile/{{auth()->id()}}">Профиль</a>
                         <a class="dropdown-item" href="/logout">Выйти</a>
                     </div>
@@ -43,19 +43,19 @@
                        aria-expanded="false">
                         <img src="{{asset('img/1px.png')}}" class="user-icon">
                     </a>
-                    <div class="dropdown-menu login-dark neon purp" aria-labelledby="dropdownMenuLink">
-                        <form method="post" action="{{ route('login') }}">
+                    <div class="dropdown-menu login-dark intro neon blue" aria-labelledby="dropdownMenuLink" style="padding-bottom: 0px; padding-top: 0px; ">
+                        <form method="post" action="{{ route('login') }}" style="padding-bottom: 20px;">
                             @csrf
                             <div class="form-group">
-                                <input class="form-control" type="text" name="name" placeholder="Ник"/>
+                                <input class="form-control neon blue" type="text" name="name" placeholder="Ник" style="background-color: #0d0121; color: white; border-radius: 10px;"/>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" type="password" name="password" placeholder="Пароль">
+                                <input class="form-control neon blue" type="password" name="password" placeholder="Пароль" style="background-color: #0d0121; color: white; border-radius: 10px;">
                             </div>
                             <div class="form-group">
-                                <button class="btn btn-primary btn-block" type="submit">Войти</button>
+                                <button class="btn btn-primary btn-block neon gren" type="submit" style="background-color: #02fd1e80; border: none; border-radius: 10px;">Войти</button>
                                 <div class="text-center pt-3">
-                                    <a class="text-dark" href="/register">Регистрация</a>
+                                    <a class="text-white" href="/register" style="color: white;">Регистрация</a>
                                 </div>
                             </div>
                         </form>
