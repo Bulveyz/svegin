@@ -843,3 +843,17 @@ textarea:focus {
     border-radius: 0px;
     background: #6d6d6d; 
 }
+
+
+
+
+
+.gg-1 {
+     margin-top: 550px;  
+} 
+
+@media screen and (max-width: 1306px) {
+.gg-1 {
+      margin-top: 100px;  
+}
+}
