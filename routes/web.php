@@ -25,5 +25,9 @@ Route::post('feed/reply/{feed}', 'FeedController@reply');
 Route::get('profile/{user}', 'ProfileController@show');
 Route::post('profile/avatar/{user}', 'ProfileController@avatar');
 
+Route::get('403', function ()
+{
+    return view('auth.unauthorize');
+});
 
 
